@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11192CF41A69047A004F1DBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11192CF31A69047A004F1DBA /* main.m */; };
+		11192CF71A69047A004F1DBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11192CF61A69047A004F1DBA /* AppDelegate.m */; };
+		11192CFF1A69047A004F1DBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11192CFE1A69047A004F1DBA /* Images.xcassets */; };
+		11192D0E1A69047A004F1DBA /* HPKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11192D0D1A69047A004F1DBA /* HPKeyboardTests.m */; };
+		11192D1B1A690516004F1DBA /* TextInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11192D1A1A690516004F1DBA /* TextInputViewController.m */; };
+		11192D1E1A69469E004F1DBA /* HPKeyboardCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 11192D1D1A69469E004F1DBA /* HPKeyboardCollectionLayout.m */; };
+		11192D211A696116004F1DBA /* HPKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 11192D201A696116004F1DBA /* HPKeyboard.m */; };
+		11BF6BBB1A69929E00857297 /* HPKeyboardCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BF6BBA1A69929E00857297 /* HPKeyboardCollectionCell.m */; };
+		11BF6BBE1A69931F00857297 /* HPKeyboardCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BF6BBD1A69931F00857297 /* HPKeyboardCollectionItem.m */; };
+		11BF6BC11A699A3F00857297 /* HPStandardKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BF6BC01A699A3F00857297 /* HPStandardKeyboard.m */; };
+		11BF6BC41A699E0700857297 /* HPKeyboardCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BF6BC31A699E0700857297 /* HPKeyboardCollection.m */; };
+		11BF6BD21A6D6B5D00857297 /* HPKeyboardKeyPopup.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BD01A6D6B5D00857297 /* HPKeyboardKeyPopup.png */; };
+		11BF6BD31A6D6B5D00857297 /* HPKeyboardKeyPopup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BD11A6D6B5D00857297 /* HPKeyboardKeyPopup@2x.png */; };
+		11BF6BD61A6D6EDE00857297 /* HPKeyboardKeyPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BF6BD51A6D6EDE00857297 /* HPKeyboardKeyPopup.m */; };
+		11BF6BDC1A6EB8CC00857297 /* HPKeyboardBell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BD71A6EB8CC00857297 /* HPKeyboardBell@2x.png */; };
+		11BF6BDD1A6EB8CC00857297 /* HPKeyboardCar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BD81A6EB8CC00857297 /* HPKeyboardCar@2x.png */; };
+		11BF6BDE1A6EB8CC00857297 /* HPKeyboardClock@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BD91A6EB8CC00857297 /* HPKeyboardClock@2x.png */; };
+		11BF6BDF1A6EB8CC00857297 /* HPKeyboardFlower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BDA1A6EB8CC00857297 /* HPKeyboardFlower@2x.png */; };
+		11BF6BE01A6EB8CC00857297 /* HPKeyboardSmile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BDB1A6EB8CC00857297 /* HPKeyboardSmile@2x.png */; };
+		11BF6BE21A6EC5B100857297 /* HPKeyboardClockSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BE11A6EC5B100857297 /* HPKeyboardClockSelected@2x.png */; };
+		11BF6BE81A6EC79900857297 /* HPKeyboardBellSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BE31A6EC79900857297 /* HPKeyboardBellSelected@2x.png */; };
+		11BF6BE91A6EC79900857297 /* HPKeyboardCarSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BE41A6EC79900857297 /* HPKeyboardCarSelected@2x.png */; };
+		11BF6BEB1A6EC79900857297 /* HPKeyboardFlowerSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BE61A6EC79900857297 /* HPKeyboardFlowerSelected@2x.png */; };
+		11BF6BEC1A6EC79900857297 /* HPKeyboardSmileSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BE71A6EC79900857297 /* HPKeyboardSmileSelected@2x.png */; };
+		11BF6BEF1A6ECFFD00857297 /* HPKeyboardBackspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BED1A6ECFFD00857297 /* HPKeyboardBackspace@2x.png */; };
+		11BF6BF01A6ECFFD00857297 /* HPKeyboardBackspaceSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BEE1A6ECFFD00857297 /* HPKeyboardBackspaceSelected@2x.png */; };
+		11BF6BF31A6ED31E00857297 /* HPKeyboardTriangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BF11A6ED31E00857297 /* HPKeyboardTriangle@2x.png */; };
+		11BF6BF41A6ED31E00857297 /* HPKeyboardTriangleSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BF21A6ED31E00857297 /* HPKeyboardTriangleSelected@2x.png */; };
+		11BF6BF71A6ED8B600857297 /* HPKeyboardKeyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BF51A6ED8B600857297 /* HPKeyboardKeyboard@2x.png */; };
+		11BF6BF81A6ED8B600857297 /* HPKeyboardKeyboardSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6BF61A6ED8B600857297 /* HPKeyboardKeyboardSelected@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11192D081A69047A004F1DBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11192CE61A69047A004F1DBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11192CED1A69047A004F1DBA;
+			remoteInfo = HPKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11192CEE1A69047A004F1DBA /* HPKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HPKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11192CF21A69047A004F1DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11192CF31A69047A004F1DBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11192CF51A69047A004F1DBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11192CF61A69047A004F1DBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11192CFE1A69047A004F1DBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		11192D071A69047A004F1DBA /* HPKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11192D0C1A69047A004F1DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11192D0D1A69047A004F1DBA /* HPKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPKeyboardTests.m; sourceTree = "<group>"; };
+		11192D191A690516004F1DBA /* TextInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextInputViewController.h; sourceTree = "<group>"; };
+		11192D1A1A690516004F1DBA /* TextInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextInputViewController.m; sourceTree = "<group>"; };
+		11192D1C1A69469E004F1DBA /* HPKeyboardCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPKeyboardCollectionLayout.h; path = Classes/HPKeyboardCollectionLayout.h; sourceTree = "<group>"; };
+		11192D1D1A69469E004F1DBA /* HPKeyboardCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPKeyboardCollectionLayout.m; path = Classes/HPKeyboardCollectionLayout.m; sourceTree = "<group>"; };
+		11192D1F1A696116004F1DBA /* HPKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPKeyboard.h; path = Classes/HPKeyboard.h; sourceTree = "<group>"; };
+		11192D201A696116004F1DBA /* HPKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPKeyboard.m; path = Classes/HPKeyboard.m; sourceTree = "<group>"; };
+		11192D221A6961C2004F1DBA /* UIResponder+WriteableInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIResponder+WriteableInputView.h"; path = "Classes/UIResponder+WriteableInputView.h"; sourceTree = "<group>"; };
+		11BF6BB91A69929E00857297 /* HPKeyboardCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPKeyboardCollectionCell.h; path = Classes/HPKeyboardCollectionCell.h; sourceTree = "<group>"; };
+		11BF6BBA1A69929E00857297 /* HPKeyboardCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPKeyboardCollectionCell.m; path = Classes/HPKeyboardCollectionCell.m; sourceTree = "<group>"; };
+		11BF6BBC1A69931F00857297 /* HPKeyboardCollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPKeyboardCollectionItem.h; path = Classes/HPKeyboardCollectionItem.h; sourceTree = "<group>"; };
+		11BF6BBD1A69931F00857297 /* HPKeyboardCollectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPKeyboardCollectionItem.m; path = Classes/HPKeyboardCollectionItem.m; sourceTree = "<group>"; };
+		11BF6BBF1A699A3F00857297 /* HPStandardKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPStandardKeyboard.h; path = Classes/HPStandardKeyboard.h; sourceTree = "<group>"; };
+		11BF6BC01A699A3F00857297 /* HPStandardKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPStandardKeyboard.m; path = Classes/HPStandardKeyboard.m; sourceTree = "<group>"; };
+		11BF6BC21A699E0700857297 /* HPKeyboardCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPKeyboardCollection.h; path = Classes/HPKeyboardCollection.h; sourceTree = "<group>"; };
+		11BF6BC31A699E0700857297 /* HPKeyboardCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPKeyboardCollection.m; path = Classes/HPKeyboardCollection.m; sourceTree = "<group>"; };
+		11BF6BD01A6D6B5D00857297 /* HPKeyboardKeyPopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HPKeyboardKeyPopup.png; path = Classes/Resource/HPKeyboardKeyPopup.png; sourceTree = "<group>"; };
+		11BF6BD11A6D6B5D00857297 /* HPKeyboardKeyPopup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardKeyPopup@2x.png"; path = "Classes/Resource/HPKeyboardKeyPopup@2x.png"; sourceTree = "<group>"; };
+		11BF6BD41A6D6EDE00857297 /* HPKeyboardKeyPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPKeyboardKeyPopup.h; path = Classes/HPKeyboardKeyPopup.h; sourceTree = "<group>"; };
+		11BF6BD51A6D6EDE00857297 /* HPKeyboardKeyPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPKeyboardKeyPopup.m; path = Classes/HPKeyboardKeyPopup.m; sourceTree = "<group>"; };
+		11BF6BD71A6EB8CC00857297 /* HPKeyboardBell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardBell@2x.png"; path = "Classes/Resource/HPKeyboardBell@2x.png"; sourceTree = "<group>"; };
+		11BF6BD81A6EB8CC00857297 /* HPKeyboardCar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardCar@2x.png"; path = "Classes/Resource/HPKeyboardCar@2x.png"; sourceTree = "<group>"; };
+		11BF6BD91A6EB8CC00857297 /* HPKeyboardClock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardClock@2x.png"; path = "Classes/Resource/HPKeyboardClock@2x.png"; sourceTree = "<group>"; };
+		11BF6BDA1A6EB8CC00857297 /* HPKeyboardFlower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardFlower@2x.png"; path = "Classes/Resource/HPKeyboardFlower@2x.png"; sourceTree = "<group>"; };
+		11BF6BDB1A6EB8CC00857297 /* HPKeyboardSmile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardSmile@2x.png"; path = "Classes/Resource/HPKeyboardSmile@2x.png"; sourceTree = "<group>"; };
+		11BF6BE11A6EC5B100857297 /* HPKeyboardClockSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardClockSelected@2x.png"; path = "Classes/Resource/HPKeyboardClockSelected@2x.png"; sourceTree = "<group>"; };
+		11BF6BE31A6EC79900857297 /* HPKeyboardBellSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardBellSelected@2x.png"; path = "Classes/Resource/HPKeyboardBellSelected@2x.png"; sourceTree = "<group>"; };
+		11BF6BE41A6EC79900857297 /* HPKeyboardCarSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardCarSelected@2x.png"; path = "Classes/Resource/HPKeyboardCarSelected@2x.png"; sourceTree = "<group>"; };
+		11BF6BE61A6EC79900857297 /* HPKeyboardFlowerSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardFlowerSelected@2x.png"; path = "Classes/Resource/HPKeyboardFlowerSelected@2x.png"; sourceTree = "<group>"; };
+		11BF6BE71A6EC79900857297 /* HPKeyboardSmileSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardSmileSelected@2x.png"; path = "Classes/Resource/HPKeyboardSmileSelected@2x.png"; sourceTree = "<group>"; };
+		11BF6BED1A6ECFFD00857297 /* HPKeyboardBackspace@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardBackspace@2x.png"; path = "Classes/Resource/HPKeyboardBackspace@2x.png"; sourceTree = "<group>"; };
+		11BF6BEE1A6ECFFD00857297 /* HPKeyboardBackspaceSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardBackspaceSelected@2x.png"; path = "Classes/Resource/HPKeyboardBackspaceSelected@2x.png"; sourceTree = "<group>"; };
+		11BF6BF11A6ED31E00857297 /* HPKeyboardTriangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardTriangle@2x.png"; path = "Classes/Resource/HPKeyboardTriangle@2x.png"; sourceTree = "<group>"; };
+		11BF6BF21A6ED31E00857297 /* HPKeyboardTriangleSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardTriangleSelected@2x.png"; path = "Classes/Resource/HPKeyboardTriangleSelected@2x.png"; sourceTree = "<group>"; };
+		11BF6BF51A6ED8B600857297 /* HPKeyboardKeyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardKeyboard@2x.png"; path = "Classes/Resource/HPKeyboardKeyboard@2x.png"; sourceTree = "<group>"; };
+		11BF6BF61A6ED8B600857297 /* HPKeyboardKeyboardSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardKeyboardSelected@2x.png"; path = "Classes/Resource/HPKeyboardKeyboardSelected@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11192CEB1A69047A004F1DBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11192D041A69047A004F1DBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11192CE51A69047A004F1DBA = {
+			isa = PBXGroup;
+			children = (
+				11192D181A6904F0004F1DBA /* Classes */,
+				11192CF01A69047A004F1DBA /* HPKeyboard */,
+				11192D0A1A69047A004F1DBA /* HPKeyboardTests */,
+				11192CEF1A69047A004F1DBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11192CEF1A69047A004F1DBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11192CEE1A69047A004F1DBA /* HPKeyboard.app */,
+				11192D071A69047A004F1DBA /* HPKeyboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11192CF01A69047A004F1DBA /* HPKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				11192CF51A69047A004F1DBA /* AppDelegate.h */,
+				11192CF61A69047A004F1DBA /* AppDelegate.m */,
+				11192D191A690516004F1DBA /* TextInputViewController.h */,
+				11192D1A1A690516004F1DBA /* TextInputViewController.m */,
+				11192CFE1A69047A004F1DBA /* Images.xcassets */,
+				11192CF11A69047A004F1DBA /* Supporting Files */,
+			);
+			path = HPKeyboard;
+			sourceTree = "<group>";
+		};
+		11192CF11A69047A004F1DBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11192CF21A69047A004F1DBA /* Info.plist */,
+				11192CF31A69047A004F1DBA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11192D0A1A69047A004F1DBA /* HPKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				11192D0D1A69047A004F1DBA /* HPKeyboardTests.m */,
+				11192D0B1A69047A004F1DBA /* Supporting Files */,
+			);
+			path = HPKeyboardTests;
+			sourceTree = "<group>";
+		};
+		11192D0B1A69047A004F1DBA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11192D0C1A69047A004F1DBA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11192D181A6904F0004F1DBA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				11BF6BCF1A6D6B4200857297 /* Resource */,
+				11BF6BD41A6D6EDE00857297 /* HPKeyboardKeyPopup.h */,
+				11BF6BD51A6D6EDE00857297 /* HPKeyboardKeyPopup.m */,
+				11192D221A6961C2004F1DBA /* UIResponder+WriteableInputView.h */,
+				11192D1C1A69469E004F1DBA /* HPKeyboardCollectionLayout.h */,
+				11192D1D1A69469E004F1DBA /* HPKeyboardCollectionLayout.m */,
+				11BF6BC21A699E0700857297 /* HPKeyboardCollection.h */,
+				11BF6BC31A699E0700857297 /* HPKeyboardCollection.m */,
+				11BF6BBC1A69931F00857297 /* HPKeyboardCollectionItem.h */,
+				11BF6BBD1A69931F00857297 /* HPKeyboardCollectionItem.m */,
+				11BF6BB91A69929E00857297 /* HPKeyboardCollectionCell.h */,
+				11BF6BBA1A69929E00857297 /* HPKeyboardCollectionCell.m */,
+				11192D1F1A696116004F1DBA /* HPKeyboard.h */,
+				11192D201A696116004F1DBA /* HPKeyboard.m */,
+				11BF6BBF1A699A3F00857297 /* HPStandardKeyboard.h */,
+				11BF6BC01A699A3F00857297 /* HPStandardKeyboard.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		11BF6BCF1A6D6B4200857297 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				11BF6BF51A6ED8B600857297 /* HPKeyboardKeyboard@2x.png */,
+				11BF6BF61A6ED8B600857297 /* HPKeyboardKeyboardSelected@2x.png */,
+				11BF6BF11A6ED31E00857297 /* HPKeyboardTriangle@2x.png */,
+				11BF6BF21A6ED31E00857297 /* HPKeyboardTriangleSelected@2x.png */,
+				11BF6BED1A6ECFFD00857297 /* HPKeyboardBackspace@2x.png */,
+				11BF6BEE1A6ECFFD00857297 /* HPKeyboardBackspaceSelected@2x.png */,
+				11BF6BD71A6EB8CC00857297 /* HPKeyboardBell@2x.png */,
+				11BF6BD81A6EB8CC00857297 /* HPKeyboardCar@2x.png */,
+				11BF6BD91A6EB8CC00857297 /* HPKeyboardClock@2x.png */,
+				11BF6BDA1A6EB8CC00857297 /* HPKeyboardFlower@2x.png */,
+				11BF6BDB1A6EB8CC00857297 /* HPKeyboardSmile@2x.png */,
+				11BF6BD01A6D6B5D00857297 /* HPKeyboardKeyPopup.png */,
+				11BF6BD11A6D6B5D00857297 /* HPKeyboardKeyPopup@2x.png */,
+				11BF6BE11A6EC5B100857297 /* HPKeyboardClockSelected@2x.png */,
+				11BF6BE31A6EC79900857297 /* HPKeyboardBellSelected@2x.png */,
+				11BF6BE41A6EC79900857297 /* HPKeyboardCarSelected@2x.png */,
+				11BF6BE61A6EC79900857297 /* HPKeyboardFlowerSelected@2x.png */,
+				11BF6BE71A6EC79900857297 /* HPKeyboardSmileSelected@2x.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11192CED1A69047A004F1DBA /* HPKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11192D111A69047A004F1DBA /* Build configuration list for PBXNativeTarget "HPKeyboard" */;
+			buildPhases = (
+				11192CEA1A69047A004F1DBA /* Sources */,
+				11192CEB1A69047A004F1DBA /* Frameworks */,
+				11192CEC1A69047A004F1DBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HPKeyboard;
+			productName = HPKeyboard;
+			productReference = 11192CEE1A69047A004F1DBA /* HPKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11192D061A69047A004F1DBA /* HPKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11192D141A69047A004F1DBA /* Build configuration list for PBXNativeTarget "HPKeyboardTests" */;
+			buildPhases = (
+				11192D031A69047A004F1DBA /* Sources */,
+				11192D041A69047A004F1DBA /* Frameworks */,
+				11192D051A69047A004F1DBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11192D091A69047A004F1DBA /* PBXTargetDependency */,
+			);
+			name = HPKeyboardTests;
+			productName = HPKeyboardTests;
+			productReference = 11192D071A69047A004F1DBA /* HPKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11192CE61A69047A004F1DBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = CoreDump;
+				TargetAttributes = {
+					11192CED1A69047A004F1DBA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					11192D061A69047A004F1DBA = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 11192CED1A69047A004F1DBA;
+					};
+				};
+			};
+			buildConfigurationList = 11192CE91A69047A004F1DBA /* Build configuration list for PBXProject "HPKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11192CE51A69047A004F1DBA;
+			productRefGroup = 11192CEF1A69047A004F1DBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11192CED1A69047A004F1DBA /* HPKeyboard */,
+				11192D061A69047A004F1DBA /* HPKeyboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11192CEC1A69047A004F1DBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BF6BDD1A6EB8CC00857297 /* HPKeyboardCar@2x.png in Resources */,
+				11BF6BF31A6ED31E00857297 /* HPKeyboardTriangle@2x.png in Resources */,
+				11BF6BE81A6EC79900857297 /* HPKeyboardBellSelected@2x.png in Resources */,
+				11BF6BDF1A6EB8CC00857297 /* HPKeyboardFlower@2x.png in Resources */,
+				11BF6BF01A6ECFFD00857297 /* HPKeyboardBackspaceSelected@2x.png in Resources */,
+				11BF6BEC1A6EC79900857297 /* HPKeyboardSmileSelected@2x.png in Resources */,
+				11BF6BD21A6D6B5D00857297 /* HPKeyboardKeyPopup.png in Resources */,
+				11BF6BDE1A6EB8CC00857297 /* HPKeyboardClock@2x.png in Resources */,
+				11BF6BEB1A6EC79900857297 /* HPKeyboardFlowerSelected@2x.png in Resources */,
+				11BF6BF81A6ED8B600857297 /* HPKeyboardKeyboardSelected@2x.png in Resources */,
+				11BF6BE91A6EC79900857297 /* HPKeyboardCarSelected@2x.png in Resources */,
+				11BF6BD31A6D6B5D00857297 /* HPKeyboardKeyPopup@2x.png in Resources */,
+				11BF6BDC1A6EB8CC00857297 /* HPKeyboardBell@2x.png in Resources */,
+				11BF6BE21A6EC5B100857297 /* HPKeyboardClockSelected@2x.png in Resources */,
+				11BF6BF41A6ED31E00857297 /* HPKeyboardTriangleSelected@2x.png in Resources */,
+				11BF6BEF1A6ECFFD00857297 /* HPKeyboardBackspace@2x.png in Resources */,
+				11BF6BE01A6EB8CC00857297 /* HPKeyboardSmile@2x.png in Resources */,
+				11BF6BF71A6ED8B600857297 /* HPKeyboardKeyboard@2x.png in Resources */,
+				11192CFF1A69047A004F1DBA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11192D051A69047A004F1DBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11192CEA1A69047A004F1DBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11192CF71A69047A004F1DBA /* AppDelegate.m in Sources */,
+				11BF6BC11A699A3F00857297 /* HPStandardKeyboard.m in Sources */,
+				11192D1E1A69469E004F1DBA /* HPKeyboardCollectionLayout.m in Sources */,
+				11BF6BC41A699E0700857297 /* HPKeyboardCollection.m in Sources */,
+				11BF6BBE1A69931F00857297 /* HPKeyboardCollectionItem.m in Sources */,
+				11192D1B1A690516004F1DBA /* TextInputViewController.m in Sources */,
+				11192CF41A69047A004F1DBA /* main.m in Sources */,
+				11BF6BD61A6D6EDE00857297 /* HPKeyboardKeyPopup.m in Sources */,
+				11BF6BBB1A69929E00857297 /* HPKeyboardCollectionCell.m in Sources */,
+				11192D211A696116004F1DBA /* HPKeyboard.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11192D031A69047A004F1DBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11192D0E1A69047A004F1DBA /* HPKeyboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11192D091A69047A004F1DBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11192CED1A69047A004F1DBA /* HPKeyboard */;
+			targetProxy = 11192D081A69047A004F1DBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11192D0F1A69047A004F1DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11192D101A69047A004F1DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11192D121A69047A004F1DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HPKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		11192D131A69047A004F1DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HPKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		11192D151A69047A004F1DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HPKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPKeyboard.app/HPKeyboard";
+			};
+			name = Debug;
+		};
+		11192D161A69047A004F1DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HPKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPKeyboard.app/HPKeyboard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11192CE91A69047A004F1DBA /* Build configuration list for PBXProject "HPKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11192D0F1A69047A004F1DBA /* Debug */,
+				11192D101A69047A004F1DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11192D111A69047A004F1DBA /* Build configuration list for PBXNativeTarget "HPKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11192D121A69047A004F1DBA /* Debug */,
+				11192D131A69047A004F1DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11192D141A69047A004F1DBA /* Build configuration list for PBXNativeTarget "HPKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11192D151A69047A004F1DBA /* Debug */,
+				11192D161A69047A004F1DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11192CE61A69047A004F1DBA /* Project object */;
+}
