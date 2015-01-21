@@ -36,6 +36,7 @@
 - (void)commonInit {
     
     [self setBackgroundColor:[UIColor clearColor]];
+    [self setUserInteractionEnabled:NO];
     [self setFrame:CGRectMake(0, 0, 83, 110)];
     [self addSubview:[self background]];
     [self addSubview:[self keyButton]];

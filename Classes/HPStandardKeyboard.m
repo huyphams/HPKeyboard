@@ -36,7 +36,7 @@
     NSString *carString = @"🏠 🏡 🏫 🏢 🏣 🏥 🏦 🏪 🏩 🏨 💒 ⛪️ 🏬 🏤 🌇 🌆 🏯 🏰 ⛺️ 🏭 🗼 🗾 🗻 🌄 🌅 🌃 🗽 🌉 🎠 🎡 ⛲️ 🎢 🚢 ⛵️ 🚤 🚣 ⚓️ 🚀 ✈️ 💺 🚁 🚂 🚊 🚉 🚞 🚆 🚄 🚅 🚈 🚇 🚝 🚋 🚃 🚎 🚌 🚍 🚙 🚘 🚗 🚕 🚖 🚛 🚚 🚨 🚓 🚔 🚒 🚑 🚐 🚲 🚡 🚟 🚠 🚜 💈 🚏 🎫 🚦 🚥 ⚠️ 🚧 🔰 ⛽️ 🏮 🎰 ♨️ 🗿 🎪 🎭 📍 🚩 🇯🇵 🇰🇷 🇩🇪 🇨🇳 🇺🇸 🇫🇷 🇪🇸 🇮🇹 🇷🇺 🇬🇧";
     
     
-    HPKeyboardCollection *historyCollection = [self keyboardCollectionFromArrayString:[self loadRecentTags]];
+    HPKeyboardCollection *historyCollection = [self keyboardCollectionFromArrayString:[HPStandardKeyboard loadRecentTags]];
     [historyCollection.title setText:@"Recent tags"];
     [historyCollection.pageControl setHidden:YES];
     [historyCollection.barButton setImage:[UIImage imageNamed:@"HPKeyboardClock"] forState:UIControlStateNormal];

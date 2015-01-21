@@ -161,6 +161,7 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
     if (![_currentCollection isEqual:first]) {
         [first addKeyItem:keyItem];
     }
+    [self saveRecentTags];
 }
 
 - (void)collectionBarButtonPressed:(UIButton *)button {
@@ -190,7 +191,6 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
             return;
         }
     }
-    [[HPStandardKeyboard sharedKeyboard] saveRecentTags];
 }
 
 - (void)saveRecentTags {
