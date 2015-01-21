@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 CoreDump. All rights reserved.
 //
 
-#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
-
 #import "HPKeyboard.h"
 
 #import "UIResponder+WriteableInputView.h"
@@ -192,6 +190,7 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
             return;
         }
     }
+    [[HPStandardKeyboard sharedKeyboard] saveRecentTags];
 }
 
 - (void)saveRecentTags {
@@ -275,6 +274,7 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 @implementation UIResponder (HPKeyboard)
 
 - (HPKeyboard *)keyboard {
+    
     if ([self.inputView isKindOfClass:[HPKeyboard class]]) {
         return (HPKeyboard *)self.inputView;
     }
@@ -301,12 +301,6 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
         default:
             break;
     }
-}
-
-
-- (void)dealloc {
-    
-    [[HPStandardKeyboard sharedKeyboard] saveRecentTags];
 }
 
 @end

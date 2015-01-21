@@ -176,9 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				11BF6BCF1A6D6B4200857297 /* Resources */,
+				11192D221A6961C2004F1DBA /* UIResponder+WriteableInputView.h */,
 				11BF6BD41A6D6EDE00857297 /* HPKeyboardKeyPopup.h */,
 				11BF6BD51A6D6EDE00857297 /* HPKeyboardKeyPopup.m */,
-				11192D221A6961C2004F1DBA /* UIResponder+WriteableInputView.h */,
 				11192D1C1A69469E004F1DBA /* HPKeyboardCollectionLayout.h */,
 				11192D1D1A69469E004F1DBA /* HPKeyboardCollectionLayout.m */,
 				11BF6BC21A699E0700857297 /* HPKeyboardCollection.h */,

@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 CoreDump. All rights reserved.
 //
 
-#define FONT_DEFAULT @"HelveticaNeue"
-
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, HPKeyboardType) {
@@ -30,8 +28,6 @@ extern NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification;
 @property (nonatomic, strong) NSArray *keyBoardCollections;
 
 - (void)switchToDefaultKeyboard;
-
-- (void)saveRecentTags;
 
 @end
 
