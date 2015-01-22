@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HPKeyboard"
-  s.version      = "0.0.2"
+  s.version      = "1.0.0"
   s.summary      = "Emoji keyboard =D."
 
   s.description  = <<-DESC
