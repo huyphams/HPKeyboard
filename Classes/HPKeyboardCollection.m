@@ -48,7 +48,8 @@
     [self setBackgroundColor:[UIColor clearColor]];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
     
-    [self setFrame:(CGRect){0, 0, HPKeyboardDefaultSize.width, HPKeyboardDefaultSize.height-HPKeyboardTabDefaultHeight}];
+    [self setFrame:(CGRect){0, 0, UIScreen.mainScreen.bounds.size.width,
+      HPKeyboardDefaultSizeHeigt - HPKeyboardTabDefaultHeight}];
     [self registerClass:[HPKeyboardCollectionCell class] forCellWithReuseIdentifier:KEY_CELL];
     
     _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 10, CGRectGetWidth(self.bounds), 20)];

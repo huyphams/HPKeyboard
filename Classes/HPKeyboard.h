@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger, HPKeyboardType) {
     HPKeyboardStandard
 };
 
-extern CGSize const HPKeyboardDefaultSize;
+extern CGFloat const HPKeyboardDefaultSizeHeigt;
 
 extern CGFloat const HPKeyboardTabDefaultHeight;
 

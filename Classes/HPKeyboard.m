@@ -13,7 +13,7 @@
 #import "HPKeyboardCollectionItem.h"
 #import "HPKeyboardCollection.h"
 
-CGSize  const HPKeyboardDefaultSize = (CGSize){320,216};
+CGFloat const HPKeyboardDefaultSizeHeigt = 216;
 CGFloat const HPKeyboardTabDefaultHeight = 35;
 NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboardDidSwitchToDefaultKeyboardNotification";
 
@@ -58,7 +58,7 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 
 - (void)commonInit {
     
-    [self setFrame:(CGRect){0, 0, HPKeyboardDefaultSize}];
+    [self setFrame:(CGRect){0, 0, UIScreen.mainScreen.bounds.size.width, HPKeyboardDefaultSizeHeigt}];
     [self setBackgroundColor:UIColorFromRGB(0xF8F8F8)];
     
     _hideKeyboardButton = [[UIButton alloc] initWithFrame:CGRectMake(7, 5, 30, 30)];
@@ -73,7 +73,7 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
     
     _collectionButtonsBar = [[UIScrollView alloc] initWithFrame:(CGRect) {
         0,
-        HPKeyboardDefaultSize.height-HPKeyboardTabDefaultHeight,
+        HPKeyboardDefaultSizeHeigt-HPKeyboardTabDefaultHeight,
         CGRectGetWidth(self.bounds),
         HPKeyboardTabDefaultHeight }];
     
@@ -82,9 +82,9 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
     [self addSubview:_collectionButtonsBar];
     
     _backspaceButton = [[UIButton alloc] initWithFrame:(CGRect) {
-        CGRectGetWidth(self.bounds)-HPKeyboardDefaultSize.width/6.0,
+        CGRectGetWidth(self.bounds)-UIScreen.mainScreen.bounds.size.width/6.0,
         CGRectGetHeight(self.bounds)-HPKeyboardTabDefaultHeight,
-        HPKeyboardDefaultSize.width/6.0,
+        UIScreen.mainScreen.bounds.size.width/6.0,
         HPKeyboardTabDefaultHeight }];
     [_backspaceButton setContentMode:UIViewContentModeScaleAspectFit];
     [_backspaceButton addTarget:self action:@selector(backSpaceTouchDown:) forControlEvents:UIControlEventTouchDown];
@@ -144,7 +144,7 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
     for (int i=0; i< [_keyBoardCollections count]; i++) {
         HPKeyboardCollection *collection = [_keyBoardCollections objectAtIndex:i];
         [collection setCollectionDelegate:self];
-        CGRect barButtonFrame = CGRectMake(i*HPKeyboardDefaultSize.width/6.0, 0, HPKeyboardDefaultSize.width/6.0, HPKeyboardTabDefaultHeight);
+        CGRect barButtonFrame = CGRectMake(i*UIScreen.mainScreen.bounds.size.width/6.0, 0, UIScreen.mainScreen.bounds.size.width/6.0, HPKeyboardTabDefaultHeight);
         [collection.barButton setFrame:barButtonFrame];
         [_collectionButtonsBar addSubview:collection.barButton];
     }
