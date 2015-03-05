@@ -14,6 +14,23 @@
 		11192D1B1A690516004F1DBA /* TextInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11192D1A1A690516004F1DBA /* TextInputViewController.m */; };
 		11192D1E1A69469E004F1DBA /* HPKeyboardCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 11192D1D1A69469E004F1DBA /* HPKeyboardCollectionLayout.m */; };
 		11192D211A696116004F1DBA /* HPKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 11192D201A696116004F1DBA /* HPKeyboard.m */; };
+		11924D451AA86AA10097B8AD /* HPKeyboardBackspace@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D431AA86AA10097B8AD /* HPKeyboardBackspace@3x.png */; };
+		11924D461AA86AA10097B8AD /* HPKeyboardBackspaceSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D441AA86AA10097B8AD /* HPKeyboardBackspaceSelected@3x.png */; };
+		11924D561AA86C7A0097B8AD /* HPKeyboardBell@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D471AA86C7A0097B8AD /* HPKeyboardBell@3x.png */; };
+		11924D571AA86C7A0097B8AD /* HPKeyboardBellSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D481AA86C7A0097B8AD /* HPKeyboardBellSelected@3x.png */; };
+		11924D581AA86C7A0097B8AD /* HPKeyboardCar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D491AA86C7A0097B8AD /* HPKeyboardCar@3x.png */; };
+		11924D591AA86C7A0097B8AD /* HPKeyboardCarSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D4A1AA86C7A0097B8AD /* HPKeyboardCarSelected@3x.png */; };
+		11924D5A1AA86C7A0097B8AD /* HPKeyboardClock@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D4B1AA86C7A0097B8AD /* HPKeyboardClock@3x.png */; };
+		11924D5B1AA86C7A0097B8AD /* HPKeyboardClockSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D4C1AA86C7A0097B8AD /* HPKeyboardClockSelected@3x.png */; };
+		11924D5C1AA86C7A0097B8AD /* HPKeyboardFlower@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D4D1AA86C7A0097B8AD /* HPKeyboardFlower@3x.png */; };
+		11924D5D1AA86C7A0097B8AD /* HPKeyboardFlowerSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D4E1AA86C7A0097B8AD /* HPKeyboardFlowerSelected@3x.png */; };
+		11924D5E1AA86C7A0097B8AD /* HPKeyboardKeyboard@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D4F1AA86C7A0097B8AD /* HPKeyboardKeyboard@3x.png */; };
+		11924D5F1AA86C7A0097B8AD /* HPKeyboardKeyboardSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D501AA86C7A0097B8AD /* HPKeyboardKeyboardSelected@3x.png */; };
+		11924D601AA86C7A0097B8AD /* HPKeyboardKeyPopup@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D511AA86C7A0097B8AD /* HPKeyboardKeyPopup@3x.png */; };
+		11924D611AA86C7A0097B8AD /* HPKeyboardSmile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D521AA86C7A0097B8AD /* HPKeyboardSmile@3x.png */; };
+		11924D621AA86C7A0097B8AD /* HPKeyboardSmileSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D531AA86C7A0097B8AD /* HPKeyboardSmileSelected@3x.png */; };
+		11924D631AA86C7A0097B8AD /* HPKeyboardTriangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D541AA86C7A0097B8AD /* HPKeyboardTriangle@3x.png */; };
+		11924D641AA86C7A0097B8AD /* HPKeyboardTriangleSelected@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11924D551AA86C7A0097B8AD /* HPKeyboardTriangleSelected@3x.png */; };
 		11BF6BBB1A69929E00857297 /* HPKeyboardCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BF6BBA1A69929E00857297 /* HPKeyboardCollectionCell.m */; };
 		11BF6BBE1A69931F00857297 /* HPKeyboardCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BF6BBD1A69931F00857297 /* HPKeyboardCollectionItem.m */; };
 		11BF6BC11A699A3F00857297 /* HPStandardKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 11BF6BC01A699A3F00857297 /* HPStandardKeyboard.m */; };
@@ -31,7 +48,6 @@
 		11BF6C381A6EE1E800857297 /* HPKeyboardFlowerSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6C261A6EE1E800857297 /* HPKeyboardFlowerSelected@2x.png */; };
 		11BF6C391A6EE1E800857297 /* HPKeyboardKeyboard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6C271A6EE1E800857297 /* HPKeyboardKeyboard@2x.png */; };
 		11BF6C3A1A6EE1E800857297 /* HPKeyboardKeyboardSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6C281A6EE1E800857297 /* HPKeyboardKeyboardSelected@2x.png */; };
-		11BF6C3B1A6EE1E800857297 /* HPKeyboardKeyPopup.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6C291A6EE1E800857297 /* HPKeyboardKeyPopup.png */; };
 		11BF6C3C1A6EE1E800857297 /* HPKeyboardKeyPopup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6C2A1A6EE1E800857297 /* HPKeyboardKeyPopup@2x.png */; };
 		11BF6C3D1A6EE1E800857297 /* HPKeyboardSmile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6C2B1A6EE1E800857297 /* HPKeyboardSmile@2x.png */; };
 		11BF6C3E1A6EE1E800857297 /* HPKeyboardSmileSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11BF6C2C1A6EE1E800857297 /* HPKeyboardSmileSelected@2x.png */; };
@@ -66,6 +82,23 @@
 		11192D1F1A696116004F1DBA /* HPKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPKeyboard.h; path = Classes/HPKeyboard.h; sourceTree = "<group>"; };
 		11192D201A696116004F1DBA /* HPKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPKeyboard.m; path = Classes/HPKeyboard.m; sourceTree = "<group>"; };
 		11192D221A6961C2004F1DBA /* UIResponder+WriteableInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIResponder+WriteableInputView.h"; path = "Classes/UIResponder+WriteableInputView.h"; sourceTree = "<group>"; };
+		11924D431AA86AA10097B8AD /* HPKeyboardBackspace@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardBackspace@3x.png"; path = "Classes/Resources/HPKeyboardBackspace@3x.png"; sourceTree = "<group>"; };
+		11924D441AA86AA10097B8AD /* HPKeyboardBackspaceSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardBackspaceSelected@3x.png"; path = "Classes/Resources/HPKeyboardBackspaceSelected@3x.png"; sourceTree = "<group>"; };
+		11924D471AA86C7A0097B8AD /* HPKeyboardBell@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardBell@3x.png"; path = "Classes/Resources/HPKeyboardBell@3x.png"; sourceTree = "<group>"; };
+		11924D481AA86C7A0097B8AD /* HPKeyboardBellSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardBellSelected@3x.png"; path = "Classes/Resources/HPKeyboardBellSelected@3x.png"; sourceTree = "<group>"; };
+		11924D491AA86C7A0097B8AD /* HPKeyboardCar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardCar@3x.png"; path = "Classes/Resources/HPKeyboardCar@3x.png"; sourceTree = "<group>"; };
+		11924D4A1AA86C7A0097B8AD /* HPKeyboardCarSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardCarSelected@3x.png"; path = "Classes/Resources/HPKeyboardCarSelected@3x.png"; sourceTree = "<group>"; };
+		11924D4B1AA86C7A0097B8AD /* HPKeyboardClock@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardClock@3x.png"; path = "Classes/Resources/HPKeyboardClock@3x.png"; sourceTree = "<group>"; };
+		11924D4C1AA86C7A0097B8AD /* HPKeyboardClockSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardClockSelected@3x.png"; path = "Classes/Resources/HPKeyboardClockSelected@3x.png"; sourceTree = "<group>"; };
+		11924D4D1AA86C7A0097B8AD /* HPKeyboardFlower@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardFlower@3x.png"; path = "Classes/Resources/HPKeyboardFlower@3x.png"; sourceTree = "<group>"; };
+		11924D4E1AA86C7A0097B8AD /* HPKeyboardFlowerSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardFlowerSelected@3x.png"; path = "Classes/Resources/HPKeyboardFlowerSelected@3x.png"; sourceTree = "<group>"; };
+		11924D4F1AA86C7A0097B8AD /* HPKeyboardKeyboard@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardKeyboard@3x.png"; path = "Classes/Resources/HPKeyboardKeyboard@3x.png"; sourceTree = "<group>"; };
+		11924D501AA86C7A0097B8AD /* HPKeyboardKeyboardSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardKeyboardSelected@3x.png"; path = "Classes/Resources/HPKeyboardKeyboardSelected@3x.png"; sourceTree = "<group>"; };
+		11924D511AA86C7A0097B8AD /* HPKeyboardKeyPopup@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardKeyPopup@3x.png"; path = "Classes/Resources/HPKeyboardKeyPopup@3x.png"; sourceTree = "<group>"; };
+		11924D521AA86C7A0097B8AD /* HPKeyboardSmile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardSmile@3x.png"; path = "Classes/Resources/HPKeyboardSmile@3x.png"; sourceTree = "<group>"; };
+		11924D531AA86C7A0097B8AD /* HPKeyboardSmileSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardSmileSelected@3x.png"; path = "Classes/Resources/HPKeyboardSmileSelected@3x.png"; sourceTree = "<group>"; };
+		11924D541AA86C7A0097B8AD /* HPKeyboardTriangle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardTriangle@3x.png"; path = "Classes/Resources/HPKeyboardTriangle@3x.png"; sourceTree = "<group>"; };
+		11924D551AA86C7A0097B8AD /* HPKeyboardTriangleSelected@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardTriangleSelected@3x.png"; path = "Classes/Resources/HPKeyboardTriangleSelected@3x.png"; sourceTree = "<group>"; };
 		11BF6BB91A69929E00857297 /* HPKeyboardCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPKeyboardCollectionCell.h; path = Classes/HPKeyboardCollectionCell.h; sourceTree = "<group>"; };
 		11BF6BBA1A69929E00857297 /* HPKeyboardCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HPKeyboardCollectionCell.m; path = Classes/HPKeyboardCollectionCell.m; sourceTree = "<group>"; };
 		11BF6BBC1A69931F00857297 /* HPKeyboardCollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HPKeyboardCollectionItem.h; path = Classes/HPKeyboardCollectionItem.h; sourceTree = "<group>"; };
@@ -88,7 +121,6 @@
 		11BF6C261A6EE1E800857297 /* HPKeyboardFlowerSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardFlowerSelected@2x.png"; path = "Classes/Resources/HPKeyboardFlowerSelected@2x.png"; sourceTree = "<group>"; };
 		11BF6C271A6EE1E800857297 /* HPKeyboardKeyboard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardKeyboard@2x.png"; path = "Classes/Resources/HPKeyboardKeyboard@2x.png"; sourceTree = "<group>"; };
 		11BF6C281A6EE1E800857297 /* HPKeyboardKeyboardSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardKeyboardSelected@2x.png"; path = "Classes/Resources/HPKeyboardKeyboardSelected@2x.png"; sourceTree = "<group>"; };
-		11BF6C291A6EE1E800857297 /* HPKeyboardKeyPopup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = HPKeyboardKeyPopup.png; path = Classes/Resources/HPKeyboardKeyPopup.png; sourceTree = "<group>"; };
 		11BF6C2A1A6EE1E800857297 /* HPKeyboardKeyPopup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardKeyPopup@2x.png"; path = "Classes/Resources/HPKeyboardKeyPopup@2x.png"; sourceTree = "<group>"; };
 		11BF6C2B1A6EE1E800857297 /* HPKeyboardSmile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardSmile@2x.png"; path = "Classes/Resources/HPKeyboardSmile@2x.png"; sourceTree = "<group>"; };
 		11BF6C2C1A6EE1E800857297 /* HPKeyboardSmileSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "HPKeyboardSmileSelected@2x.png"; path = "Classes/Resources/HPKeyboardSmileSelected@2x.png"; sourceTree = "<group>"; };
@@ -198,6 +230,23 @@
 		11BF6BCF1A6D6B4200857297 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				11924D431AA86AA10097B8AD /* HPKeyboardBackspace@3x.png */,
+				11924D441AA86AA10097B8AD /* HPKeyboardBackspaceSelected@3x.png */,
+				11924D471AA86C7A0097B8AD /* HPKeyboardBell@3x.png */,
+				11924D481AA86C7A0097B8AD /* HPKeyboardBellSelected@3x.png */,
+				11924D491AA86C7A0097B8AD /* HPKeyboardCar@3x.png */,
+				11924D4A1AA86C7A0097B8AD /* HPKeyboardCarSelected@3x.png */,
+				11924D4B1AA86C7A0097B8AD /* HPKeyboardClock@3x.png */,
+				11924D4C1AA86C7A0097B8AD /* HPKeyboardClockSelected@3x.png */,
+				11924D4D1AA86C7A0097B8AD /* HPKeyboardFlower@3x.png */,
+				11924D4E1AA86C7A0097B8AD /* HPKeyboardFlowerSelected@3x.png */,
+				11924D4F1AA86C7A0097B8AD /* HPKeyboardKeyboard@3x.png */,
+				11924D501AA86C7A0097B8AD /* HPKeyboardKeyboardSelected@3x.png */,
+				11924D511AA86C7A0097B8AD /* HPKeyboardKeyPopup@3x.png */,
+				11924D521AA86C7A0097B8AD /* HPKeyboardSmile@3x.png */,
+				11924D531AA86C7A0097B8AD /* HPKeyboardSmileSelected@3x.png */,
+				11924D541AA86C7A0097B8AD /* HPKeyboardTriangle@3x.png */,
+				11924D551AA86C7A0097B8AD /* HPKeyboardTriangleSelected@3x.png */,
 				11BF6C1D1A6EE1E800857297 /* HPKeyboardBackspace@2x.png */,
 				11BF6C1E1A6EE1E800857297 /* HPKeyboardBackspaceSelected@2x.png */,
 				11BF6C1F1A6EE1E800857297 /* HPKeyboardBell@2x.png */,
@@ -210,7 +259,6 @@
 				11BF6C261A6EE1E800857297 /* HPKeyboardFlowerSelected@2x.png */,
 				11BF6C271A6EE1E800857297 /* HPKeyboardKeyboard@2x.png */,
 				11BF6C281A6EE1E800857297 /* HPKeyboardKeyboardSelected@2x.png */,
-				11BF6C291A6EE1E800857297 /* HPKeyboardKeyPopup.png */,
 				11BF6C2A1A6EE1E800857297 /* HPKeyboardKeyPopup@2x.png */,
 				11BF6C2B1A6EE1E800857297 /* HPKeyboardSmile@2x.png */,
 				11BF6C2C1A6EE1E800857297 /* HPKeyboardSmileSelected@2x.png */,
@@ -300,24 +348,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11924D601AA86C7A0097B8AD /* HPKeyboardKeyPopup@3x.png in Resources */,
+				11924D561AA86C7A0097B8AD /* HPKeyboardBell@3x.png in Resources */,
+				11924D5E1AA86C7A0097B8AD /* HPKeyboardKeyboard@3x.png in Resources */,
 				11BF6C351A6EE1E800857297 /* HPKeyboardClock@2x.png in Resources */,
-				11BF6C3B1A6EE1E800857297 /* HPKeyboardKeyPopup.png in Resources */,
+				11924D5D1AA86C7A0097B8AD /* HPKeyboardFlowerSelected@3x.png in Resources */,
+				11924D591AA86C7A0097B8AD /* HPKeyboardCarSelected@3x.png in Resources */,
 				11BF6C381A6EE1E800857297 /* HPKeyboardFlowerSelected@2x.png in Resources */,
 				11BF6C3E1A6EE1E800857297 /* HPKeyboardSmileSelected@2x.png in Resources */,
 				11BF6C3C1A6EE1E800857297 /* HPKeyboardKeyPopup@2x.png in Resources */,
 				11BF6C301A6EE1E800857297 /* HPKeyboardBackspaceSelected@2x.png in Resources */,
+				11924D581AA86C7A0097B8AD /* HPKeyboardCar@3x.png in Resources */,
 				11BF6C3A1A6EE1E800857297 /* HPKeyboardKeyboardSelected@2x.png in Resources */,
+				11924D461AA86AA10097B8AD /* HPKeyboardBackspaceSelected@3x.png in Resources */,
+				11924D571AA86C7A0097B8AD /* HPKeyboardBellSelected@3x.png in Resources */,
 				11BF6C3F1A6EE1E800857297 /* HPKeyboardTriangle@2x.png in Resources */,
 				11BF6C3D1A6EE1E800857297 /* HPKeyboardSmile@2x.png in Resources */,
 				11BF6C371A6EE1E800857297 /* HPKeyboardFlower@2x.png in Resources */,
+				11924D451AA86AA10097B8AD /* HPKeyboardBackspace@3x.png in Resources */,
 				11BF6C391A6EE1E800857297 /* HPKeyboardKeyboard@2x.png in Resources */,
+				11924D5C1AA86C7A0097B8AD /* HPKeyboardFlower@3x.png in Resources */,
 				11BF6C321A6EE1E800857297 /* HPKeyboardBellSelected@2x.png in Resources */,
 				11192CFF1A69047A004F1DBA /* Images.xcassets in Resources */,
+				11924D5B1AA86C7A0097B8AD /* HPKeyboardClockSelected@3x.png in Resources */,
+				11924D611AA86C7A0097B8AD /* HPKeyboardSmile@3x.png in Resources */,
+				11924D5F1AA86C7A0097B8AD /* HPKeyboardKeyboardSelected@3x.png in Resources */,
 				11BF6C401A6EE1E800857297 /* HPKeyboardTriangleSelected@2x.png in Resources */,
+				11924D5A1AA86C7A0097B8AD /* HPKeyboardClock@3x.png in Resources */,
 				11BF6C341A6EE1E800857297 /* HPKeyboardCarSelected@2x.png in Resources */,
 				11BF6C311A6EE1E800857297 /* HPKeyboardBell@2x.png in Resources */,
+				11924D621AA86C7A0097B8AD /* HPKeyboardSmileSelected@3x.png in Resources */,
 				11BF6C361A6EE1E800857297 /* HPKeyboardClockSelected@2x.png in Resources */,
+				11924D641AA86C7A0097B8AD /* HPKeyboardTriangleSelected@3x.png in Resources */,
 				11BF6C331A6EE1E800857297 /* HPKeyboardCar@2x.png in Resources */,
+				11924D631AA86C7A0097B8AD /* HPKeyboardTriangle@3x.png in Resources */,
 				11BF6C2F1A6EE1E800857297 /* HPKeyboardBackspace@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
