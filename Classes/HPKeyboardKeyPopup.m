@@ -9,13 +9,11 @@
 #import "HPKeyboardKeyPopup.h"
 
 @implementation HPKeyboardKeyPopup {
-    
     UIImageView *_background;
     UIButton *_keyButton;
 }
 
 - (instancetype)init {
-    
     if (!(self = [super init])) {
         return nil;
     }
@@ -24,7 +22,6 @@
 }
 
 - (UIImageView *)background {
-    
     if (!_background) {
         _background = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 83, 110)];
         [_background setBackgroundColor:[UIColor clearColor]];
@@ -34,7 +31,6 @@
 }
 
 - (void)commonInit {
-    
     [self setBackgroundColor:[UIColor clearColor]];
     [self setUserInteractionEnabled:NO];
     [self setFrame:CGRectMake(0, 0, 83, 110)];
@@ -43,7 +39,6 @@
 }
 
 - (UIButton *)keyButton {
-    
     if (!_keyButton) {
         _keyButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 7, 43, 43)];
         [_keyButton.titleLabel setFont:[UIFont systemFontOfSize:33]];
@@ -53,7 +48,6 @@
 }
 
 - (void)setKeyItem:(HPKeyboardCollectionItem *)keyItem {
-    
     _keyItem = keyItem;
     [[self keyButton] setImage:_keyItem.image forState:UIControlStateNormal];
     [[self keyButton] setTitle:_keyItem.title forState:UIControlStateNormal];

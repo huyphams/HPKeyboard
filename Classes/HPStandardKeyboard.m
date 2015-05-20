@@ -27,7 +27,6 @@
 }
 
 + (void)initKeyboard:(HPKeyboard *)keyboard {
-    
     NSString *facesString = @"😄 😃 😀 😊 ☺️ 😉 😍 😘 😚 😗 😙 😜 😝 😛 😳 😁 😔 😌 😒 😞 😣 😢 😂 😭 😪 😥 😰 😅 😓 😩 😫 😨 😱 😠 😡 😤 😖 😆 😋 😷 😎 😴 😵 😲 😟 😦 😧 😈 👿 😮 😬 😐 😕 😯 😶 😇 😏 😑 👲 👳 👮 👷 💂 👶 👦 👧 👨 👩 👴 👵 👱 👼 👸 😺 😸 😻 😽 😼 🙀 😿 😹 😾 👹 👺 🙈 🙉 🙊 💀 👽 💩 🔥 ✨ 🌟 💫 💥 💢 💦 💧 💤 💨 👂 👀 👃 👅 👄 👍 👎 👌 👊 ✊ ✌️ 👋 ✋ 👐 👆 👇 👉 👈 🙌 🙏 ☝️ 👏 💪 🚶 🏃 💃 👫 👪 👬 👭 💏 💑 👯 🙆 🙅 💁 🙋 💆 💇 💅 👰 🙎 🙍 🙇 🎩 👑 👒 👟 👞 👡 👠 👢 👕 👔 👚 👗 🎽 👖 👘 👙 💼 👜 👝 👛 👓 🎀 🌂 💄 💛 💙 💜 💚 ❤ 💔 💗 💓 💕 💖 💞 💘 💌 💋 💍 💎 👤 👥 💬 👣 💭";
     NSString *flowersString = @"🐶 🐺 🐱 🐭 🐹 🐰 🐸 🐯 🐨 🐻 🐷 🐽 🐮 🐗 🐵 🐒 🐴 🐑 🐘 🐼 🐧 🐦 🐤 🐥 🐣 🐔 🐍 🐢 🐛 🐝 🐜 🐞 🐌 🐙 🐚 🐠 🐟 🐬 🐳 🐋 🐄 🐏 🐀 🐃 🐅 🐇 🐉 🐎 🐐 🐓 🐕 🐖 🐁 🐂 🐲 🐡 🐊 🐫 🐪 🐆 🐈 🐩 🐾 💐 🌸 🌷 🍀 🌹 🌻 🌺 🍁 🍃 🍂 🌿 🌾 🍄 🌵 🌴 🌲 🌳 🌰 🌱 🌼 🌐 🌞 🌝 🌚 🌑 🌒 🌓 🌔 🌕 🌖 🌗 🌘 🌜 🌛 🌙 🌍 🌎 🌏 🌋 🌌 🌠 ⭐️ ☀️ ⛅️ ☁️ ⚡️ ☔️ ❄️ ⛄️ 🌀 🌁 🌈 🌊";
     
@@ -62,7 +61,6 @@
 }
 
 + (HPKeyboardCollection *)keyboardCollectionFromString:(NSString *)string {
-    
     HPKeyboardCollection *collection = [[HPKeyboardCollection alloc] init];
     if (string) {
         NSMutableArray *items = [NSMutableArray array];
@@ -82,7 +80,6 @@
 }
 
 + (HPKeyboardCollection *)keyboardCollectionFromArrayString:(NSArray *)array {
-    
     HPKeyboardCollection *collection = [[HPKeyboardCollection alloc] init];
     if (array) {
         NSMutableArray *items = [NSMutableArray array];
@@ -102,7 +99,6 @@
 
 
 + (NSArray *)loadRecentTags {
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *stringsPlistPath = [[paths objectAtIndex:0] stringByAppendingPathComponent:KeyboardRecentTagsPlist];
     NSArray *tagsArray = [NSArray arrayWithContentsOfFile:stringsPlistPath];
@@ -110,7 +106,6 @@
 }
 
 + (void)saveRecentTags:(NSArray *)array {
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *stringsPlistPath = [[paths objectAtIndex:0] stringByAppendingPathComponent:KeyboardRecentTagsPlist];
     [array writeToFile:stringsPlistPath atomically:YES];

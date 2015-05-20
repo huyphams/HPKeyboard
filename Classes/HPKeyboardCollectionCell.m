@@ -14,7 +14,6 @@
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
-    
     if (!(self = [super initWithFrame:frame])) {
         return nil;
     }
@@ -23,14 +22,12 @@
 }
 
 - (void)commonInit {
-    
     [self setBackgroundColor:[UIColor clearColor]];
     [self.contentView setBackgroundColor:[UIColor clearColor]];
     [self.contentView addSubview:[self keyButton]];
 }
 
 - (UIButton *)keyButton {
-    
     if (!_keyButton) {
         _keyButton = [[UIButton alloc] initWithFrame:self.bounds];
         [_keyButton.titleLabel setFont:[UIFont systemFontOfSize:33]];
@@ -40,7 +37,6 @@
 }
 
 - (void)setKeyItem:(HPKeyboardCollectionItem *)keyItem {
-    
     _keyItem = keyItem;
     [[self keyButton] setImage:_keyItem.image forState:UIControlStateNormal];
     [[self keyButton] setTitle:_keyItem.title forState:UIControlStateNormal];

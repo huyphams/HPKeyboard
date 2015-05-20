@@ -25,7 +25,6 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 @end
 
 @implementation HPKeyboard {
-    
     UIButton *_hideKeyboardButton;
     UIButton *_backspaceButton;
     UIButton *_switchButton;
@@ -33,7 +32,6 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 + (instancetype)sharedInstance {
-    
     static dispatch_once_t once;
     static id sharedInstance;
     dispatch_once(&once, ^{
@@ -43,12 +41,10 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 + (instancetype)keyboard {
-    
     return [[HPKeyboard alloc] init];
 }
 
 - (instancetype)init {
-    
     if (!(self = [super init])) {
         return nil;
     }
@@ -57,7 +53,6 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 - (void)commonInit {
-    
     [self setFrame:(CGRect){0, 0, UIScreen.mainScreen.bounds.size.width, HPKeyboardDefaultSizeHeigt}];
     [self setBackgroundColor:UIColorFromRGB(0xF8F8F8)];
     
@@ -102,12 +97,10 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 - (void)hideKeyboardButtonTouchUpInside:(UIButton *)button {
-    
     [self.textInput resignFirstResponder];
 }
 
 - (void)backSpaceTouchDown:(UIButton *)button {
-    
     [NSObject cancelPreviousPerformRequestsWithTarget:self
                                              selector:@selector(autoDelete)
                                                object:nil];
@@ -127,7 +120,6 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 - (void)autoDelete {
-    
     if (_backspaceButton.isHighlighted) {
         [self.textInput deleteBackward];
         [self performSelector:@selector(autoDelete)
@@ -138,9 +130,7 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 - (void)setKeyBoardCollections:(NSArray *)keyBoardCollections {
-    
     _keyBoardCollections = keyBoardCollections;
-    
     for (int i=0; i< [_keyBoardCollections count]; i++) {
         HPKeyboardCollection *collection = [_keyBoardCollections objectAtIndex:i];
         [collection setCollectionDelegate:self];
@@ -154,10 +144,8 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 - (void)collectionKeyPressed:(HPKeyboardCollectionItem *)keyItem {
-    
     [self inputText:keyItem.character];
     [UIDevice.currentDevice playInputClick];
-    
     HPKeyboardCollection *first = [_keyBoardCollections firstObject];
     if (![_currentCollection isEqual:first]) {
         [first addKeyItem:keyItem];
@@ -166,7 +154,6 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 - (void)collectionBarButtonPressed:(UIButton *)button {
-    
     [button setBackgroundColor:UIColorFromRGB(0xF8F8F8)];
     [button setSelected:YES];
     if (_currentCollection) {
@@ -195,7 +182,6 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 - (void)saveRecentTags {
-    
     HPKeyboardCollection *first = [_keyBoardCollections firstObject];
     NSMutableArray *arrayString = [NSMutableArray array];
     for (HPKeyboardCollectionItem *item in first.keyItems) {
@@ -207,19 +193,16 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 #pragma mark - Text Input
 
 - (void)setInputViewToView:(UIView *)view {
-    
     [self.textInput setInputView:view];
     [self.textInput reloadInputViews];
 }
 
 - (void)attachToTextInput:(UIResponder<UITextInput> *)textInput {
-    
     [self setTextInput:textInput];
     [self setInputViewToView:self];
 }
 
 - (void)switchToDefaultKeyboard {
-    
     [self setInputViewToView:nil];
     [self setTextInput:nil];
     [[NSNotificationCenter defaultCenter] postNotificationName:HPKeyboardDidSwitchToDefaultKeyboardNotification
@@ -227,20 +210,17 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 - (void)inputText:(NSString *)text {
-    
     [self replaceTextInRange:self.textInput.selectedTextRange
                     withText:text];
 }
 
 - (void)replaceTextInRange:(UITextRange *)range withText:(NSString *)text {
-    
     if (range && [self textInputShouldReplaceTextInRange:range replacementText:text]) {
         [self.textInput replaceRange:range withText:text];
     }
 }
 
 - (BOOL)textInputShouldReplaceTextInRange:(UITextRange *)range replacementText:(NSString *)replacementText {
-    
     BOOL shouldChange = YES;
     NSInteger startOffset = [self.textInput offsetFromPosition:self.textInput.beginningOfDocument
                                                     toPosition:range.start];
@@ -275,7 +255,6 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 @implementation UIResponder (HPKeyboard)
 
 - (HPKeyboard *)keyboard {
-    
     if ([self.inputView isKindOfClass:[HPKeyboard class]]) {
         return (HPKeyboard *)self.inputView;
     }
@@ -283,14 +262,12 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
 }
 
 - (void)switchToKeyboard:(HPKeyboard *)keyboard {
-    
     if ([self conformsToProtocol:@protocol(UITextInput)] && [self respondsToSelector:@selector(setInputView:)]) {
         [keyboard attachToTextInput:(UIResponder<UITextInput> *)self];
     }
 }
 
 - (void)switchToKeyboardType:(HPKeyboardType)keyboardType {
-    
     switch (keyboardType) {
         case HPKeyboardDefault:
             [self.keyboard switchToDefaultKeyboard];

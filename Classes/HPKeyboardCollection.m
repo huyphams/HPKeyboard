@@ -22,24 +22,21 @@
 @end
 
 @implementation HPKeyboardCollection {
-    
     HPKeyboardKeyPopup *_keyPopup;
     UIButton *_barButton;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
-    
     HPKeyboardCollectionLayout *keyboardCollectionLayout = [[HPKeyboardCollectionLayout alloc] init];
-    _keyboardCollectionLayout = keyboardCollectionLayout;
     if (!(self = [super initWithFrame:frame collectionViewLayout:keyboardCollectionLayout])) {
         return nil;
     }
+    _keyboardCollectionLayout = keyboardCollectionLayout;
     [self commonInit];
     return self;
 }
 
 - (void)commonInit {
-    
     [self setDelegate:self];
     [self setDataSource:self];
     [self setShowsHorizontalScrollIndicator:NO];
@@ -47,11 +44,9 @@
     [self setPagingEnabled:YES];
     [self setBackgroundColor:[UIColor clearColor]];
     [self setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight)];
-    
     [self setFrame:(CGRect){0, 0, UIScreen.mainScreen.bounds.size.width,
       HPKeyboardDefaultSizeHeigt - HPKeyboardTabDefaultHeight}];
     [self registerClass:[HPKeyboardCollectionCell class] forCellWithReuseIdentifier:KEY_CELL];
-    
     _pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 10, CGRectGetWidth(self.bounds), 20)];
     [_pageControl setPageIndicatorTintColor:[UIColor lightGrayColor]];
     [_pageControl setCurrentPageIndicatorTintColor:UIColorFromRGB(0x1C6CB5)];
@@ -80,14 +75,12 @@
 }
 
 - (void)barButtonDidWhenTouchDown:(UIButton *)button {
-    
     if ([self.collectionDelegate respondsToSelector:@selector(collectionBarButtonPressed:)]) {
         [self.collectionDelegate collectionBarButtonPressed:button];
     }
 }
 
 - (void)handleLongTouch:(UILongPressGestureRecognizer *)gestureRecognizer {
-    
     CGPoint touchedLocation = [gestureRecognizer locationInView:self];
     NSIndexPath *touchedIndexPath = [self indexPathForItemAtPoint:touchedLocation];
     HPKeyboardCollectionCell *cell = (HPKeyboardCollectionCell *)[self cellForItemAtIndexPath:touchedIndexPath];
@@ -106,7 +99,6 @@
 }
 
 - (void)showKeyPopup:(HPKeyboardCollectionCell *)cell {
-    
     CGFloat x = fmod(CGRectGetMidX(cell.frame), CGRectGetWidth(self.bounds));
     CGFloat y = CGRectGetMaxY(cell.frame)-CGRectGetHeight(_keyPopup.frame)/2.0;
     [_keyPopup setCenter:CGPointMake(x, y)];
@@ -116,13 +108,11 @@
 }
 
 - (void)setKeyItems:(NSMutableArray *)keyItems {
-    
     _keyItems = keyItems;
     [self reloadData];
 }
 
 - (void)addKeyItem:(HPKeyboardCollectionItem *)keyItem {
-    
     NSMutableArray *itemsToRemmove = [NSMutableArray array];
     for (HPKeyboardCollectionItem *item in _keyItems) {
         if ([item.title isEqualToString:keyItem.title]) {
@@ -154,23 +144,19 @@
 #pragma mark - CollectionView Delegate, DataSource
 
 - (void)refreshPageControl {
-    
     [self.pageControl setNumberOfPages:ceil(self.contentSize.width/CGRectGetWidth(self.bounds))];
     [self.pageControl setCurrentPage:floor(self.contentOffset.x/CGRectGetWidth(self.bounds))];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
     [self refreshPageControl];
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    
     return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    
     if (!_keyItems) {
         return 0;
     }
@@ -182,7 +168,6 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
     HPKeyboardCollectionItem *item = [_keyItems objectAtIndex:indexPath.row];
     HPKeyboardCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:KEY_CELL forIndexPath:indexPath];
     [cell setKeyItem:item];
@@ -191,7 +176,6 @@
 
 - (void)collectionView:(UICollectionView *)collectionView
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    
     [self showKeyPopup:(HPKeyboardCollectionCell *)[collectionView cellForItemAtIndexPath:indexPath]];
     if ([self.collectionDelegate respondsToSelector:@selector(collectionKeyPressed:)]) {
         HPKeyboardCollectionItem *keyItem = [_keyItems objectAtIndex:indexPath.row];
@@ -201,7 +185,6 @@ didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
 }
 
 - (void)removePopView {
-    
     [_keyPopup removeFromSuperview];
 }
 
