@@ -88,7 +88,6 @@ NSString * const HPKeyboardDidSwitchToDefaultKeyboardNotification = @"HPKeyboard
     [self addSubview:_backspaceButton];
 
     _switchButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetWidth(self.bounds)-47, 5, 40, 30)];
-    [_switchButton setHidden:YES];
     [_switchButton setContentMode:UIViewContentModeScaleAspectFit];
     [_switchButton addTarget:self action:@selector(switchToDefaultKeyboard) forControlEvents:UIControlEventTouchUpInside];
     [_switchButton setImage:[UIImage imageNamed:@"HPKeyboardKeyboard"] forState:UIControlStateNormal];
