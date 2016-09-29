@@ -7,7 +7,7 @@ HPKeyboard is an emoji keyboard =D
 Author is a crazy boy =D, he also wrote some open source [HPCollectionLayout] and [HPTabbarController].
 
 ### Version
-1.1.0
+1.2.0
 
 ### Installation 
 
